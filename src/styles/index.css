@@ -1,0 +1,31 @@
+@font-face {
+  font-family: 'Metropolis';
+  src: url("../assets/fonts/Metropolis-Regular.otf");
+}
+
+.App {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  font-family: 'Metropolis';
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.logo {
+  color: white;
+  margin: 15px auto 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+@import url(../styles/components/sidebar.css);

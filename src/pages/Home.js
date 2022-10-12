@@ -1,5 +1,4 @@
 import { useQuery } from "react-query";
-import { Container } from "@mui/material";
 import SongTable from "../components/SongTable";
 
 function Home() {
@@ -8,13 +7,13 @@ function Home() {
   const { data, error, status } = useQuery("songs", fetchAllSongs);
 
   return (
-    <Container maxWidth="md">
+    <div className="container">
       {status === "error" && <div>{error.message}</div>}
 
       {status === "loading" && <div>Loading...</div>}
 
       {data && <SongTable songs={data} />}
-    </Container>
+    </div>
   );
 }
 

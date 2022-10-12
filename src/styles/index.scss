@@ -26,6 +26,13 @@ body {
   margin: 0 auto;
   padding-left: 24px;
   padding-right: 24px;
+  max-height: 100vh;
+  overflow: scroll;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-@import url(../styles/components/sidebar.css);
+@import url(../styles/components/sidebar.scss);
+@import url(../styles/components/modal.scss);
+@import url(../styles/components/songTable.scss);

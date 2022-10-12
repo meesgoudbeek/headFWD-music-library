@@ -21,10 +21,8 @@ function SongTable({ songs }) {
 
   const rows = filtered.map((song, index) => (
     <tr key={index}>
-      <td>{song.id}</td>
       <td>{song.name}</td>
       <td>{song.artist}</td>
-      <td>{song.year}</td>
       <td>{song.album}</td>
       <td>
         <button>
@@ -49,10 +47,8 @@ function SongTable({ songs }) {
       <table>
         <thead>
           <tr>
-            <th>Id</th>
             <th>Name</th>
             <th>Artist</th>
-            <th>Year</th>
             <th>Genre</th>
           </tr>
         </thead>

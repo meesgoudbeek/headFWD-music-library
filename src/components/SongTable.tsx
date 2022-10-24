@@ -1,10 +1,10 @@
-import { useState } from "react";
-import { Input, InputAdornment } from "@mui/material";
-import FavoriteIcon from "@mui/icons-material/Favorite";
-import SearchIcon from "@mui/icons-material/Search";
+import React, { useState } from 'react';
+import { Input, InputAdornment } from '@mui/material';
+import FavoriteIcon from '@mui/icons-material/Favorite';
+import SearchIcon from '@mui/icons-material/Search';
 
 function SongTable({ songs }) {
-  const [search, setNewSearch] = useState("");
+  const [search, setNewSearch] = useState('');
 
   const handleSearchChange = (e) => {
     setNewSearch(e.target.value);
@@ -13,10 +13,7 @@ function SongTable({ songs }) {
   const filtered = !search
     ? songs
     : songs.filter((song) => {
-        return Object.values(song)
-          .join("")
-          .toLowerCase()
-          .includes(search.toLowerCase());
+        return Object.values(song).join('').toLowerCase().includes(search.toLowerCase());
       });
 
   const rows = filtered.map((song, index) => (

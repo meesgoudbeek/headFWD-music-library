@@ -1,9 +1,9 @@
 @font-face {
   font-family: 'Metropolis';
-  src: url("../assets/fonts/Metropolis-Regular.otf");
+  src: url('../assets/fonts/Metropolis-Regular.otf');
 }
 
-.App {
+.Home {
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -36,3 +36,4 @@ body {
 @import url(../styles/components/sidebar.scss);
 @import url(../styles/components/modal.scss);
 @import url(../styles/components/songTable.scss);
+@import url(../styles/components/succes.scss);

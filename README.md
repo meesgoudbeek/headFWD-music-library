@@ -1,5 +1,15 @@
 This is a music library application where a user can create custom playlists and add songs from the music library.
 
+For the data to show you will need to install json-server
+
+Install JSON Server
+
+npm install -g json-server
+
+then navigate to the data folder and run:
+
+json-server --watch db.json
+
 ## Available Scripts
 
 In the project directory, you can run:
